@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario de Tenis Deportivos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#añadir">Añadir Producto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="productos">
+            <!-- Aquí se mostrarán los productos -->
+        </section>
+        <section id="añadir">
+            <!-- Formulario para añadir productos -->
+            <form id="addProductForm">
+                <input type="text" id="id" placeholder="ID del producto" readonly>
+                <input type="text" id="nombre" placeholder="Nombre del producto">
+                <input type="number" id="precio" placeholder="Precio">
+                <input type="text" id="detalles" placeholder="Descripción del producto">
+                <input type="number" id="cantidad" placeholder="Cantidad">
+                <button type="submit">Añadir Producto</button>
+            </form>
+        </section>
+    </main>
+    <script type="module" src="app.js"></script> <!-- Modificado para cargar como módulo -->
+</body>
+</html>
